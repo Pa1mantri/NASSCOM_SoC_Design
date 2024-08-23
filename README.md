@@ -304,7 +304,13 @@ tap_decap_or
 
 ``run_routing``
 
+![Screenshot 2024-08-23 061324](https://github.com/user-attachments/assets/759dac90-e263-49eb-b530-30a5f8e4815b)
+
 Routing occurs over many iterations. Below are the images showing that in the 4th iteration there are 21 violations, and in the 57th iteration, the design converges with zero violations.
+
+![Screenshot 2024-08-23 061420](https://github.com/user-attachments/assets/41bcf6a8-2e7e-424b-b60e-b236f2cdf2b4)
+
+![Screenshot 2024-08-23 061440](https://github.com/user-attachments/assets/f4106489-b3f7-4b62-8772-f3d404c51410)
 
 Post-routing static timing analysis (STA) can be performed within the OpenFlow itself using openraod command which invokes OpenSTA.
 
@@ -313,6 +319,8 @@ read_lef /openLANE_flow/designs/picorv32a/src/22-08_08-41/tmp/merged.lef
 read_def /openLANE_flow/designs/picorv32a/src/22-08_08-41/results/routing/picorv32a.def
 write_db picorv32_rout.db
 ```
+
+![Screenshot 2024-08-23 063034](https://github.com/user-attachments/assets/0ad5a67d-b98e-4dd4-bddb-ac45992f5e94)
 
 ```
 read_db picorv32_rout.db
@@ -325,3 +333,8 @@ read_spef /openLANE_flow/designs/picorv32a/src/22-08_08-41/results/routing/picor
 report_checks -path_delay min_max -fields {slew trans net cap input_pin} -format clock_full_expanded -digits 4
 ```
 
+![Screenshot 2024-08-23 065735](https://github.com/user-attachments/assets/7cc260d5-b3ea-40e5-9a16-f4cfdcae88d2)
+
+![Screenshot 2024-08-23 065655](https://github.com/user-attachments/assets/1ea30262-2e90-461b-9d7a-20a02924b2e4)
+
+![Screenshot 2024-08-23 065710](https://github.com/user-attachments/assets/33d15c48-8025-44de-8033-b8348b5789a7)
