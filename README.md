@@ -96,3 +96,22 @@ docker
 package require openlane
 prep -design picorv32a
 ```
+![Screenshot 2024-08-21 144728](https://github.com/user-attachments/assets/04c2e99b-2ecf-471e-a66b-89edd90f3733)
+
+This step will create a folder in runs directory.
+
+![Screenshot 2024-08-21 144926](https://github.com/user-attachments/assets/82e2838a-3e59-4e2d-bbd6-775988dec523)
+
+After ```run_synthesis``` command, it will generate a netlist file ```picorv32a.synthesis.v``` in the results synthesis folder. 
+
+![Screenshot 2024-08-21 151932](https://github.com/user-attachments/assets/8cd350dc-d68e-4fb7-9144-fef2b4eb297c)
+
+Chip area of the module is obtained at the end of the synthesis. Flop ratio is calculated using the statistics obtained from the synthesis step.
+
+Flop ratio = no.of Dff used / total no. of cells
+
+![Screenshot 2024-08-21 150951](https://github.com/user-attachments/assets/d591bffa-cfa7-4f38-b378-29716c152a65)
+
+![Screenshot 2024-08-21 151340](https://github.com/user-attachments/assets/41b1a9b0-807d-46e7-b6b1-589c668db336)
+
+![Screenshot 2024-08-21 150919](https://github.com/user-attachments/assets/6c6b6b26-4498-4828-89b9-e40e56436c7c)
