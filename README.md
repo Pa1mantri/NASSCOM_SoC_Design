@@ -45,8 +45,29 @@ OpenLane is a flow developed by efabless for opensource skywater sky130 PDK. Thr
 2. EDA Tools
 3. PDK
 
+![Screenshot 2024-08-23 134031](https://github.com/user-attachments/assets/fac9fd0b-1f00-467d-9fa1-c6c284eceac2)
+
 RTL Designs describes the flow of data between registers and the operations performed on the data.
 
 Electronic Design Automation tools help design and verify whether the RTL code meets the specifications and functionality of the system.
 
 A Process Design Kit (PDK) serves as an interface between the designer and the foundry. It contains all the necessary information and files required by the designer to design integrated circuits for a specific fabrication process offered by the foundry. The PDK includes various files and data that enable effective communication and collaboration between the designer and the foundry. These files help the designer understand the foundry's process, design rules, and available components, allowing them to create designs that are optimized for the foundry's manufacturing capabilities.
+
+The steps in the RTL to GDSII flow include 
+
+![Screenshot 2024-08-23 134057](https://github.com/user-attachments/assets/587edb1f-b778-4916-a8df-b2502fa556ab)
+
+**Synthesis**: Synthesis is the process of converting RTL code into a netlist, which comprises standard cell libraries and their connections.
+
+*Opensource Tools used* : yosys,ABC
+
+![Screenshot 2024-08-23 134113](https://github.com/user-attachments/assets/91153eaa-dd25-4111-bb77-45edefd41c6c)
+
+**Floorplan**: 
+
+![Screenshot 2024-08-23 134151](https://github.com/user-attachments/assets/ac4dbf51-efb4-483d-8ba1-8d02df4b8931)
+![Screenshot 2024-08-23 134222](https://github.com/user-attachments/assets/ff8d3af2-47ab-40b9-a5c9-ea608c9b390f)
+![Screenshot 2024-08-23 134235](https://github.com/user-attachments/assets/efadf71d-c4b3-4eee-a01f-5a263b18419c)
+![Screenshot 2024-08-23 134257](https://github.com/user-attachments/assets/619c03f9-ee0b-4f12-89aa-776ae9328d09)
+![Screenshot 2024-08-23 134314](https://github.com/user-attachments/assets/8e8888c3-f85a-4b22-8b91-4ea08602bfb7)
+
