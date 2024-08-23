@@ -140,6 +140,17 @@ Vertical and Horizontal pins are set using the switches ```FP_IO_VMETAL``` and `
 
 **Implementation of Placement**
 
+```run_placement```
+
 Placement determines the arrangement of standard cells within the chip. It refers to the process of positioning standard cells, macros, and I/O pads on the ASIC layout.
 
 Both floor planning and placement do not add any extra logic to the synthesized netlist.
+
+![Screenshot 2024-08-21 171538](https://github.com/user-attachments/assets/980558cb-0527-42ca-9c1b-b506f42daa5b)
+
+![Screenshot 2024-08-21 171717](https://github.com/user-attachments/assets/578554fd-3d65-43e2-8936-2fc92f2dc3c9)
+
+## Day-3
+
+### Characterization of an inverter cell 
+
