@@ -37,7 +37,13 @@ The interface that implements the instruction set architecture is the RTL Verilo
 
 ![3](https://github.com/user-attachments/assets/ce37d9de-4ee5-4a37-8837-92631485d817)
 
+### OpenLane
 
+OpenLane is a flow developed by efabless for opensource skywater sky130 PDK. Three major requirements for an ASIC design are 
+1.RTL Designs
+2.EDA Tools
+3.PDK
 
-
-
+RTL Designs describes the flow of data between registers and the operations performed on the data.
+Electronic Design Automation tools help design and verify whether the RTL code meets the specifications and functionality of the system.
+A Process Design Kit (PDK) serves as an interface between the designer and the foundry. It contains all the necessary information and files required by the designer to design integrated circuits for a specific fabrication process offered by the foundry. The PDK includes various files and data that enable effective communication and collaboration between the designer and the foundry. These files help the designer understand the foundry's process, design rules, and available components, allowing them to create designs that are optimized for the foundry's manufacturing capabilities.
