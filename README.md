@@ -23,5 +23,21 @@ The core is filled with various IPs and macros.
 
 ![ip n macro](https://github.com/user-attachments/assets/208945f0-b102-4e37-969c-5f365496d07e)
 
+### Introduction to RISC-V
+
+RISC-V is an instruction set architecture which is an interface between software(C, python, java programs) and hardware(Layout).
+
+1
+
+For a software program to run on hardware, it passes through many interfaces and applications, such as system software, which handles memory allocation and low-level system functions, as well as a compiler that converts the software code into assembly instructions, and an assembler that translates these assembly instructions into machine code.
+
+2
+
+The interface that implements the instruction set architecture is the RTL Verilog code. This RTL code is converted into a layout that executes the program.
+
+
+
+
+
 
 
