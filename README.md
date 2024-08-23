@@ -39,10 +39,11 @@ The interface that implements the instruction set architecture is the RTL Verilo
 
 ### OpenLane
 
-OpenLane is a flow developed by efabless for opensource skywater sky130 PDK. Three major requirements for an ASIC design are 
-1.RTL Designs
-2.EDA Tools
-3.PDK
+OpenLane is a flow developed by efabless for opensource skywater sky130 PDK. Three major requirements for an ASIC design are
+
+1. RTL Designs
+2. EDA Tools
+3. PDK
 
 RTL Designs describes the flow of data between registers and the operations performed on the data.
 Electronic Design Automation tools help design and verify whether the RTL code meets the specifications and functionality of the system.
