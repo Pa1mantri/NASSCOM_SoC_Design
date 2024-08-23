@@ -83,3 +83,8 @@ The steps in the RTL to GDSII flow include
 
 ![Screenshot 2024-08-23 134314](https://github.com/user-attachments/assets/8e8888c3-f85a-4b22-8b91-4ea08602bfb7)
 
+### OpenLane ASIC Flow
+
+![Screenshot 2024-08-23 160230](https://github.com/user-attachments/assets/41856789-9ccb-4801-8719-460c6f65b037)
+
+
