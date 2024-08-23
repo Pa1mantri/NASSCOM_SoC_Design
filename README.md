@@ -87,4 +87,12 @@ The steps in the RTL to GDSII flow include
 
 ![Screenshot 2024-08-23 160230](https://github.com/user-attachments/assets/41856789-9ccb-4801-8719-460c6f65b037)
 
+## RTL to GDSII practical implementation
 
+### Commands to initiate the flow
+```
+docker
+./flow.tcl -interactive
+package require openlane
+prep -design picorv32a
+```
