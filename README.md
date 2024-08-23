@@ -225,4 +225,6 @@ writing lef file ``sky130_INV_PA1.lef``
 
 ![Screenshot 2024-08-22 112826](https://github.com/user-attachments/assets/4b9e126f-3b90-4a7a-8d62-7fb41658d5fd)
 
-![Screenshot 2024-08-22 141656](https://github.com/user-attachments/assets/b2e3c21f-10f0-4c61-a0b0-b630d2ebb7a0)
+## Day-4
+
+To include the customized LEF file ```sy130_INV_PA1.lef``` into the ```picorv32a``` design, the config.tcl file must be updated. The LEF file and the corresponding libraries also need to be included in the config file.
