@@ -286,5 +286,7 @@ tap_decap_or
 
 ![Screenshot 2024-08-22 171903](https://github.com/user-attachments/assets/597497da-4048-46e1-bfc4-f4eb5ab9976f)
 
+### Post synthesis timing analysis outside openlane flow using OpenSTA
 
+``pre_sta.conf`` configuration file along with my_base.sdc is used to do STA analysis
 
