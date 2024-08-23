@@ -241,5 +241,27 @@ The cell sky130_INV_PA1 has been used 1554 times in the synthesis.
 
 ![Screenshot 2024-08-22 150404](https://github.com/user-attachments/assets/ce1eef3f-efc4-4d40-8351-c19e912ec219)
 
+During the synthesis, the chip area of the module is 147712.9184
+
+tns = -711.59 wns = -23.89
+
 ![Screenshot 2024-08-22 141801](https://github.com/user-attachments/assets/5fc17d74-1d37-48df-879b-114b23697118)
+
+By changing the ``SYNTH_STRATEGY`` from AREA to DELAY, the TNS and WNS values changed to zero, but this resulted in an increased chip area of 181730.544.
+
+commands to change the swithces
+
+```
+set ::$env(SYNTH_STRATAGEY) "DELAY 3"
+echo $::env(SYNTH_STRATAGEY) - To print the value
+```
+
+Similar switches to optimize the netlist at synthesis stage
+
+```
+SYNTH_MAX_FANOUT
+SYNTH_SIZING
+SYNTH_BUFFERING
+SYNTH_DRIVING_CELL
+```
 
