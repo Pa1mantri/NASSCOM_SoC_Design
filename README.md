@@ -63,11 +63,23 @@ The steps in the RTL to GDSII flow include
 
 ![Screenshot 2024-08-23 134113](https://github.com/user-attachments/assets/91153eaa-dd25-4111-bb77-45edefd41c6c)
 
-**Floorplan**: 
+**Floorplan**: This is the process of defining the layout of the ASIC, including the placement of standard cells, macros, and I/O pads. The height and width of the core are decided in this step. Ideally, the power distribution network is also established at this stage. In OpenLane, this occurs after CTS. All preplaced cells are located in the floor plan stage.
 
 ![Screenshot 2024-08-23 134151](https://github.com/user-attachments/assets/ac4dbf51-efb4-483d-8ba1-8d02df4b8931)
+
+**Placement**: refers to the process of positioning standard cells in rows on the ASIC. This step is essential for ensuring that the design meets performance, area, and power requirements. Placement occurs in two stages: Global Placement and Detailed Placement.
+
 ![Screenshot 2024-08-23 134222](https://github.com/user-attachments/assets/ff8d3af2-47ab-40b9-a5c9-ea608c9b390f)
+
+**Clock Tree Synthesis**:  After CTS, timing checks are performed to ensure setup and hold constraints are met. If timing is not met, previous steps like placement may need to be revisited and optimized.
+
 ![Screenshot 2024-08-23 134235](https://github.com/user-attachments/assets/efadf71d-c4b3-4eee-a01f-5a263b18419c)
+
+**Routing**: Signal routing happens after clock routing in CTS stage. Routing is divided into Global routing and Detailed routing.
+
 ![Screenshot 2024-08-23 134257](https://github.com/user-attachments/assets/619c03f9-ee0b-4f12-89aa-776ae9328d09)
+
+**Signoff**: There should not be any DRC or LVS errors for the design to converge.
+
 ![Screenshot 2024-08-23 134314](https://github.com/user-attachments/assets/8e8888c3-f85a-4b22-8b91-4ea08602bfb7)
 
