@@ -154,3 +154,6 @@ Both floor planning and placement do not add any extra logic to the synthesized 
 
 ### Characterization of an inverter cell 
 
+In this case, Characterization of an inverter starts from the .mag file, not from scratch. From this inverter layout, a SPICE deck is generated, and then the characterization of the cell is performed. Characterization involves simulating the inverter's performance under various conditions using ``ngspice``. We calculate Rise transition delay, Fall transition delay, rise cell delay, fall cell delay. Create a LEF file from the layout which can be used to include this cell in any larger design.
+
+
