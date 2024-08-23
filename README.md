@@ -300,5 +300,28 @@ tap_decap_or
 
 ![Screenshot 2024-08-23 054949](https://github.com/user-attachments/assets/328880f2-5dce-4430-9882-bb2211ea5b8f)
 
+## Day-5
 
+``run_routing``
+
+Routing occurs over many iterations. Below are the images showing that in the 4th iteration there are 21 violations, and in the 57th iteration, the design converges with zero violations.
+
+Post-routing static timing analysis (STA) can be performed within the OpenFlow itself using openraod command which invokes OpenSTA.
+
+```
+read_lef /openLANE_flow/designs/picorv32a/src/22-08_08-41/tmp/merged.lef
+read_def /openLANE_flow/designs/picorv32a/src/22-08_08-41/results/routing/picorv32a.def
+write_db picorv32_rout.db
+```
+
+```
+read_db picorv32_rout.db
+read_verilog /openLANE_flow/designs/picorv32a/results/synthesis/picorv32a.synthesis_preroute.v
+read_liberty $::env(LIB_SYNTH_COMPLETE)
+link_design picorv32a
+read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+set_propagated_clock [all_clocks]
+read_spef /openLANE_flow/designs/picorv32a/src/22-08_08-41/results/routing/picorv32a.spef
+report_checks -path_delay min_max -fields {slew trans net cap input_pin} -format clock_full_expanded -digits 4
+```
 
