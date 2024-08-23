@@ -228,3 +228,18 @@ writing lef file ``sky130_INV_PA1.lef``
 ## Day-4
 
 To include the customized LEF file ```sy130_INV_PA1.lef``` into the ```picorv32a``` design, the config.tcl file must be updated. The LEF file and the corresponding libraries also need to be included in the config file.
+
+```
+set lefs [glob $::env(DESIGN_DIR)/src/*.lef]
+add_lefs -src $lefs
+```
+These commands need to be added to the flow to incorporate the custom inverter cell into the ASIC flow during synthesis.
+
+The cell sky130_INV_PA1 has been used 1554 times in the synthesis.
+
+![Screenshot 2024-08-22 141656](https://github.com/user-attachments/assets/f163657c-d92b-4755-aa37-00b40b2327ec)
+
+![Screenshot 2024-08-22 150404](https://github.com/user-attachments/assets/ce1eef3f-efc4-4d40-8351-c19e912ec219)
+
+![Screenshot 2024-08-22 141801](https://github.com/user-attachments/assets/5fc17d74-1d37-48df-879b-114b23697118)
+
