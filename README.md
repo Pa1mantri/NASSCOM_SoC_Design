@@ -115,3 +115,9 @@ Flop ratio = no.of Dff used / total no. of cells
 ![Screenshot 2024-08-21 151340](https://github.com/user-attachments/assets/41b1a9b0-807d-46e7-b6b1-589c668db336)
 
 ![Screenshot 2024-08-21 150919](https://github.com/user-attachments/assets/6c6b6b26-4498-4828-89b9-e40e56436c7c)
+
+## Day-2
+
+**Implementation of floorplan**
+
+
