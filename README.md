@@ -120,4 +120,21 @@ Flop ratio = no.of Dff used / total no. of cells
 
 **Implementation of floorplan**
 
+```run_floorplan```
+
+Utilization factor and aspect ratio can be assigned at this stage. If there are any macros, these pre-placed macros are positioned in this step. Decoupling capacitors and pin placements are also handled at this stage.
+
+A ```.def``` file is generated at the end of the floorplan stage. The .def file can be viewed using the Magic tool.
+
+![Screenshot 2024-08-21 164032](https://github.com/user-attachments/assets/9e583500-d709-49eb-9b24-5e2e7022cd18)
+
+Using the ```FP_IO_MODE``` switch set to 0 and 1, one mode sets the I/O pins equidistantly, while the other places them randomly.
+
+![Screenshot 2024-08-21 165022](https://github.com/user-attachments/assets/ea6283ed-cacf-4643-9488-abdd15d84613)
+
+![Screenshot 2024-08-21 171006](https://github.com/user-attachments/assets/e69da08f-3899-4ae4-8380-6de1240f1949)
+
+Vertical and Horizontal pins are set using the switches ```FP_IO_VMETAL``` and ```FP_IO_HMETAL```
+
+![Screenshot 2024-08-21 165716](https://github.com/user-attachments/assets/1bbd7007-752e-47bd-a84a-39eabd391e37)
 
