@@ -268,7 +268,23 @@ SYNTH_DRIVING_CELL
 
 ![Screenshot 2024-08-22 154314](https://github.com/user-attachments/assets/9d287e41-f823-4577-b3c6-06fd0dfd8ae2)
 
-Running floorplan 
+Running floorplan by the following commands
+```
+init_floorplan
+place_io
+tap_decap_or
+```
+![Screenshot 2024-08-22 155415](https://github.com/user-attachments/assets/392e4bc2-a315-4b0c-a8fe-9f7976c8aa29)
+
+![Screenshot 2024-08-22 155722](https://github.com/user-attachments/assets/d1708b37-c4e0-4c3c-b851-59cd8d0d4c3a)
+
+``sky130_INV_PA1`` cell in merged.lef file
+
+![Screenshot 2024-08-22 165553](https://github.com/user-attachments/assets/43c000bc-1726-4c68-be43-6d4a9f6e48f0)
+
+![Screenshot 2024-08-22 171816](https://github.com/user-attachments/assets/1835b94f-a8d4-452f-af70-2d90ee7920b1)
+
+![Screenshot 2024-08-22 171903](https://github.com/user-attachments/assets/597497da-4048-46e1-bfc4-f4eb5ab9976f)
 
 
 
