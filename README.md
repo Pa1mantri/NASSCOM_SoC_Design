@@ -156,4 +156,67 @@ Both floor planning and placement do not add any extra logic to the synthesized 
 
 In this case, Characterization of an inverter starts from the .mag file, not from scratch. From this inverter layout, a SPICE deck is generated, and then the characterization of the cell is performed. Characterization involves simulating the inverter's performance under various conditions using ``ngspice``. We calculate Rise transition delay, Fall transition delay, rise cell delay, fall cell delay. Create a LEF file from the layout which can be used to include this cell in any larger design.
 
+![Screenshot 2024-08-21 181855](https://github.com/user-attachments/assets/6de4099a-d65d-4c01-abe3-c4c6bef50e42)
 
+Opening the ``sky130_inv.mag`` file in magic
+
+![Screenshot 2024-08-21 182102](https://github.com/user-attachments/assets/9ef7c627-d4ee-4d70-83fc-d6021fd008f8)
+
+extracting spice from the mag file using the commands 
+
+```
+extract all
+ext2spice cthresh 0 rthresh 0
+ext2spice
+```
+![Screenshot 2024-08-21 182406](https://github.com/user-attachments/assets/6f24dab9-30ba-4923-9a03-d224e84d8f82)
+
+Generated ```sky130_inv.spice``` file
+
+![Screenshot 2024-08-21 182453](https://github.com/user-attachments/assets/b4b2987d-549e-4189-a754-6e7720527778)
+
+Make some changes to the spice desk by including Vdd, input voltage (pulse) and trans response
+
+![Screenshot 2024-08-21 193301](https://github.com/user-attachments/assets/598a724a-d278-4446-80ed-5d7474800974)
+
+Running the modified spice file using ngspice
+
+![Screenshot 2024-08-21 194223](https://github.com/user-attachments/assets/e2d0a45e-f9b8-4bbb-b440-740e303b6b4f)
+
+Plotting different values from the graph
+
+![Screenshot 2024-08-22 101910](https://github.com/user-attachments/assets/830c4023-4ee2-4377-a796-f78facc1e5b6)
+
+Rise time: Time taken for the output waveform to transition from 20% to 80% of its maximum value.
+
+x0 = 2.164  y0 = 0.659 
+x1 = 2.205 y1 = 2.639
+
+rise time = x1 - x0 = 0.041ns
+
+Fall time:  Time taken for the output waveform to transition from 80% to 20% of its maximum value.
+
+x0 = 4.040  y0 = 2.64
+x1 = 4.068 y1 = 0.660
+
+fall time = x1 - x0 = 0.028ns
+
+Rise cell delay: The time taken for a 50% transition at the output (0 to 1) corresponding to a 50% transition at the input (1 to 0)
+
+x0 = 2.186  y0 = 1.65
+x1 = 2.151 y1 = 1.65
+
+Propogation delay = 0.03ns
+
+Fall cell delay : The time taken for a 50% transition at the output (1 to 0) corresponding to a 50% transition at the input (0 to 1)
+
+x0 = 4.054  y0 = 1.65
+x1 = 4.05 y1 = 1.65
+
+propogation delay = 0.004ns
+
+![Screenshot 2024-08-22 110502](https://github.com/user-attachments/assets/b5c9acd8-9ff0-48ce-861c-0aef949ef2fb)
+
+![Screenshot 2024-08-22 112826](https://github.com/user-attachments/assets/4b9e126f-3b90-4a7a-8d62-7fb41658d5fd)
+
+![Screenshot 2024-08-22 141656](https://github.com/user-attachments/assets/b2e3c21f-10f0-4c61-a0b0-b630d2ebb7a0)
