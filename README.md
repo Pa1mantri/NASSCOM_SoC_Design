@@ -290,3 +290,10 @@ tap_decap_or
 
 ``pre_sta.conf`` configuration file along with my_base.sdc is used to do STA analysis
 
+![Screenshot 2024-08-23 040424](https://github.com/user-attachments/assets/df1e4a2c-cfdf-4b7b-97fe-224a04c095aa)
+
+![Screenshot 2024-08-23 033249](https://github.com/user-attachments/assets/5e21772c-e9fb-41b3-8a54-18bf153c78eb)
+
+![Screenshot 2024-08-23 033333](https://github.com/user-attachments/assets/2bfb94bf-a4dd-423c-acd3-e496a6231c2a)
+
+
