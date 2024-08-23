@@ -27,15 +27,15 @@ The core is filled with various IPs and macros.
 
 RISC-V is an instruction set architecture which is an interface between software(C, python, java programs) and hardware(Layout).
 
-1
+![ISA_interface](https://github.com/user-attachments/assets/fc8b8b4c-89c1-4c75-9756-6fd4920ce6a1)
 
 For a software program to run on hardware, it passes through many interfaces and applications, such as system software, which handles memory allocation and low-level system functions, as well as a compiler that converts the software code into assembly instructions, and an assembler that translates these assembly instructions into machine code.
 
-2
+![2](https://github.com/user-attachments/assets/efe6c0dd-826f-4952-8ed4-24596e42b9af)
 
 The interface that implements the instruction set architecture is the RTL Verilog code. This RTL code is converted into a layout that executes the program.
 
-
+![3](https://github.com/user-attachments/assets/ce37d9de-4ee5-4a37-8837-92631485d817)
 
 
 
