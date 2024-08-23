@@ -189,33 +189,39 @@ Plotting different values from the graph
 
 Rise time: Time taken for the output waveform to transition from 20% to 80% of its maximum value.
 
-x0 = 2.164  y0 = 0.659 
+x0 = 2.164  y0 = 0.659
+
 x1 = 2.205 y1 = 2.639
 
-rise time = x1 - x0 = 0.041ns
+``rise time = x1 - x0 = 0.041ns``
 
 Fall time:  Time taken for the output waveform to transition from 80% to 20% of its maximum value.
 
 x0 = 4.040  y0 = 2.64
+
 x1 = 4.068 y1 = 0.660
 
-fall time = x1 - x0 = 0.028ns
+``fall time = x1 - x0 = 0.028ns``
 
 Rise cell delay: The time taken for a 50% transition at the output (0 to 1) corresponding to a 50% transition at the input (1 to 0)
 
 x0 = 2.186  y0 = 1.65
+
 x1 = 2.151 y1 = 1.65
 
-Propogation delay = 0.03ns
+``Propogation delay = 0.03ns``
 
 Fall cell delay : The time taken for a 50% transition at the output (1 to 0) corresponding to a 50% transition at the input (0 to 1)
 
 x0 = 4.054  y0 = 1.65
+
 x1 = 4.05 y1 = 1.65
 
-propogation delay = 0.004ns
+``propogation delay = 0.004ns``
 
 ![Screenshot 2024-08-22 110502](https://github.com/user-attachments/assets/b5c9acd8-9ff0-48ce-861c-0aef949ef2fb)
+
+writing lef file ``sky130_INV_PA1.lef``
 
 ![Screenshot 2024-08-22 112826](https://github.com/user-attachments/assets/4b9e126f-3b90-4a7a-8d62-7fb41658d5fd)
 
