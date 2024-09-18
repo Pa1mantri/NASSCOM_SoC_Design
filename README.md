@@ -338,3 +338,11 @@ report_checks -path_delay min_max -fields {slew trans net cap input_pin} -format
 ![Screenshot 2024-08-23 065655](https://github.com/user-attachments/assets/1ea30262-2e90-461b-9d7a-20a02924b2e4)
 
 ![Screenshot 2024-08-23 065710](https://github.com/user-attachments/assets/33d15c48-8025-44de-8033-b8348b5789a7)
+
+
+# Understanding Magic tool:
+
+To check all the rules regarding front end layers, implant layers check this documentation ``https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html#poly``
+
+By making some changes in the tech file, we reducing the DRC errors.
+
