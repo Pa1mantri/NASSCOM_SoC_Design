@@ -346,3 +346,21 @@ To check all the rules regarding front end layers, implant layers check this doc
 
 By making some changes in the tech file, we reducing the DRC errors.
 
+![Screenshot 2024-09-18 105407](https://github.com/user-attachments/assets/c8271585-0bb5-406a-b20f-19c2673b55cd)
+
+![Screenshot 2024-09-18 111622](https://github.com/user-attachments/assets/a2c91525-f433-426c-b775-f4612e3d64ca)
+
+![Screenshot 2024-09-18 112521](https://github.com/user-attachments/assets/81bd8bf5-be08-4b41-bd02-e3d5d335d8a3)
+
+![Screenshot 2024-09-18 114513](https://github.com/user-attachments/assets/c5b98ca8-451a-42c4-ae49-6f4bdae3c92f)
+
+![Screenshot 2024-09-18 120045](https://github.com/user-attachments/assets/e21d0245-e7e4-46d0-ae7d-236257b198ba)
+
+![Screenshot 2024-09-18 120256](https://github.com/user-attachments/assets/a812b656-f300-4ef6-9270-a0c83f183ba3)
+
+![Screenshot 2024-09-18 124401](https://github.com/user-attachments/assets/bfb7b6ae-9d9d-4246-9bc7-c3fe449e4386)
+
+![Screenshot 2024-09-18 124758](https://github.com/user-attachments/assets/9fc48b3e-d4af-4025-94de-f8d418793bb7)
+
+![Screenshot 2024-09-18 125450](https://github.com/user-attachments/assets/af0c2abb-6097-43e1-a15a-99ff925769d4)
+
