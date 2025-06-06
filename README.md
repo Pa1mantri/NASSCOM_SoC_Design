@@ -1,8 +1,7 @@
 # Digital VLSI SOC Design and Planning
 
-In this workshop, we will see what are all the steps involved in making an Application Specific Intergrated Circuit(ASIC) from RTL to GDSII.
+In this project, we will see what are all the steps involved in making an Application Specific Intergrated Circuit(ASIC) from RTL to GDSII.
 
-## Day-1
 The field we are exploring involves the chips inside boards such as the Arduino board and the VSDSquadron. The image below shows Arduino board.
 
 ![arduino](https://github.com/user-attachments/assets/6deca6bb-2499-4791-a94f-bc36ee51062d)
@@ -116,7 +115,6 @@ Flop ratio = no.of Dff used / total no. of cells
 
 ![Screenshot 2024-08-21 150919](https://github.com/user-attachments/assets/6c6b6b26-4498-4828-89b9-e40e56436c7c)
 
-## Day-2
 
 **Implementation of floorplan**
 
@@ -150,7 +148,6 @@ Both floor planning and placement do not add any extra logic to the synthesized 
 
 ![Screenshot 2024-08-21 171717](https://github.com/user-attachments/assets/578554fd-3d65-43e2-8936-2fc92f2dc3c9)
 
-## Day-3
 
 ### Characterization of an inverter cell 
 
@@ -225,7 +222,6 @@ writing lef file ``sky130_INV_PA1.lef``
 
 ![Screenshot 2024-08-22 112826](https://github.com/user-attachments/assets/4b9e126f-3b90-4a7a-8d62-7fb41658d5fd)
 
-## Day-4
 
 To include the customized LEF file ```sy130_INV_PA1.lef``` into the ```picorv32a``` design, the config.tcl file must be updated. The LEF file and the corresponding libraries also need to be included in the config file.
 
@@ -300,7 +296,7 @@ tap_decap_or
 
 ![Screenshot 2024-08-23 054949](https://github.com/user-attachments/assets/328880f2-5dce-4430-9882-bb2211ea5b8f)
 
-## Day-5
+## Routing
 
 ``run_routing``
 
